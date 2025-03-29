@@ -1,0 +1,110 @@
+.card-personalinfo {
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.22);
+  width: 500px;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: row;
+  border-right: 2px dotted black;
+  align-self: center;
+  gap: 10px;
+}
+
+.card-left-info>h3 {
+  margin: 0;
+}
+
+.card-left-info>p {
+  color: gray;
+  font-weight: 600;
+}
+
+.card-left-image>img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.card-right {
+  padding: 5px;
+}
+
+.contents {
+  background: white;
+  padding: 10px;
+}
+
+.company-info-form,
+.profile-info-form,
+.subscription-info-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.company-info-form>div:first-child,
+.profile-info-form>div:first-child,
+.subscription-info-form>div:first-child {
+  display: grid;
+  grid-template-columns: 200px 300px;
+  gap: 10px;
+  padding: 10px;
+}
+
+input[id="profile-info-username"],
+input[id="profile-info-email"],
+input[id="profile-info-mobileno"],
+input[id="profile-info-contactperson"],
+input[id="profile-info-licenseno"],
+input[id="company-info-companyname"],
+input[id="company-info-companygst"],
+textarea[id="company-info-companyaddress"],
+input[id="company-info-state"],
+input[id="company-info-city"],
+input[id="company-info-postalcode"],
+input[id="company-info-subscriberid"],
+input[id="account-subscription-plan-name"],
+input[id="account-subscription-renewal-date"],
+input[id="company-info-partnername"],
+input[id="company-info-partnermobileno"] {
+  grid-column: 2;
+  width: 200px;
+}
+
+label[for="profile-info-username"],
+label[for="profile-info-email"],
+label[for="profile-info-mobileno"],
+label[for="profile-info-contactperson"],
+label[for="profile-info-licenseno"],
+label[for="company-info-companyname"],
+label[for="company-info-companygst"],
+label[for="company-info-companyaddress"],
+label[for="company-info-state"],
+label[for="company-info-city"],
+label[for="company-info-postalcode"],
+label[for="company-info-subscriberid"],
+label[id="account-subscription-plan-name"],
+label[id="account-subscription-renewal-date"],
+label[for="company-info-partnername"],
+label[for="company-info-partnermobileno"] {
+  grid-column: 1;
+  align-self: center;
+  width: 200px;
+}
+
+#submenu-company-name {
+  font-weight: bold;
+}
+
+.company-info-image,
+.profile-info-image {
+  padding: 15px;
+  border: 2px solid black;
+  align-self: center;
+}
