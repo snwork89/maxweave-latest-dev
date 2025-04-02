@@ -1,0 +1,137 @@
+/* pannel css  */
+
+.panel-box {
+  width: 80px !important;
+}
+
+.panel-pencil label {
+  font-size: 14px !important;
+  color: white !important;
+}
+
+.panel-form {
+  gap: 12px;
+  padding: 5px;
+  color: white;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-top: 5px;
+  background: #017ea4;
+  /* box-shadow: 0 8px 32px 0 rgba(16, 224, 224, 0.37); */
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  position: absolute;
+  top: 40px;
+}
+
+.X,
+.Y {
+  gap: 12px;
+  color: white;
+}
+
+.close {
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.label-pannel {
+  margin-top: 5px;
+}
+
+.panel-tital {
+  margin-top: 1px;
+  margin: 0px 10px 0px 10px;
+}
+
+/* animation css  */
+
+.panel-show {
+  animation-name: slide-down;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    /* transform: translateY(-90%); */
+  }
+
+  to {
+    opacity: 1;
+    /* transform: translateY(0); */
+  }
+}
+
+/* radiobtn- css  */
+.radio-group {
+  gap: 6px;
+  padding-right: 5px;
+  padding: 5px;
+}
+
+#radio-1,
+#radio-4,
+#radio-5,
+#radio-6,
+#scale {
+  border-right: 2px solid white;
+  padding: 4px;
+}
+
+.radio-button {
+  /* Increase the size */
+  width: 20px;
+  height: 20px;
+
+  /* Style the appearance */
+  border: 2px solid #00005c;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* Customize the checked state */
+.radio-button:checked {
+  background-color: #00005c;
+}
+
+.radio-item {
+  gap: 6px;
+}
+
+.radio-item > label,
+input[type="radio"] {
+  cursor: pointer !important;
+}
+
+.panel-endNumb {
+  margin-left: 13px;
+}
+
+black .radio-label {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#scale {
+  margin-left: 12px;
+}
+
+.ratio {
+  border: 1px solid white;
+  padding: 3px 5px 3px 5px;
+  background-color: white;
+  color: black;
+}
+
+.checkbox {
+  height: 15px;
+  /* Adjust the desired height */
+  width: 15px;
+  /* Adjust the desired width */
+}

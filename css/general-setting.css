@@ -1,0 +1,55 @@
+.page-content {
+  padding: 15px;
+}
+
+.design-general-contents {
+  margin-top: 10px;
+  width: 1275px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.box {
+  border: 1px solid black;
+  height: 100px;
+  padding: 15px;
+  align-self: center;
+}
+
+.align-center {
+  text-align: center;
+}
+.flex-width {
+  width: 33.33%;
+}
+
+.margintop {
+  margin-top: 5px;
+}
+
+.select-decorder {
+  height: 30px;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.input-decorder {
+  height: 30px;
+  background-color: rgb(240, 240, 240);
+}
+
+.button {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.button button {
+  background-color: #444654;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+  cursor: pointer;
+}
