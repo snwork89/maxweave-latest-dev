@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="maxweavefev.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/title-setting.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/switch.css" />
+    <title>Profile</title>
+</head>
+
+<body>
+    
+    <script src="sidebar.js" defer></script>
+    <script src="title.js" defer></script>
+    <div class="title-setting">
+        <div class="sidebar close">
+            <div class="logo-details">
+                <i class='bx bxl-c-plus-plus'></i>
+                <span class="logo_name">Max Weave</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="/" class="text-black">
+                        <i class="fa-solid fa-home"></i>
+                        <span class="link_name">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='fa-solid fa-cog'></i>
+                            <span class="link_name">Account</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name">Account</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                        <li><a href="devices.html">Device</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='fa-solid fa-cog'></i>
+                            <span class="link_name">Setting</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name">Design Setting</a></li>
+                        <li><a href="general-setting.html">Genaral</a></li>
+                        <li><a href="layoutsetting.html">Layout</a></li>
+                        <li><a class="link_name">Data Sheets</a></li>
+                        <li><a href="title.html">Title</a></li>
+                        <li><a href="details-setting.html">Details</a></li>
+                        <li><a href="simulation-setting.html">Simulation</a></li>
+                        <li><a href="warp-weft-pattern.html">Warp/Weft Pattern</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='fa-solid fa-phone'></i>
+                            <span class="link_name">Supports</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Supports</a></li>
+                        <li><a href="#">create supports</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt-2'></i>
+                        <span class="link_name">Store</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Store</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <!-- <img src="image/profile.jpg" alt="profileImg"> -->
+                        </div>
+                        <div class="name-job">
+                            <div class="profile_name">User Name</div>
+                        </div>
+                        <i class='bx bx-log-out'></i>
+                    </div>
+                </li>
+        </div>
+        <div class="right">
+            <div class="navbar">
+                <header>
+                    <nav>
+                        <i class="fa fa-bars icon"></i>
+                        <span>Max Weave</span>
+                    </nav>
+                </header>
+            </div>
+
+
+            <div class="page-content">
+                <div class="page-heading">
+                    <h3>Title Setting</h3>
+                </div>
+                <div class="breadcrumb">
+                    <span>Setting / Title</span>
+                </div>
+                <div class="title-contents">
+                    <div class="company-logo" id="company-logo">
+                        <img src="./assets/Assert/maxweavelogo.png" />
+                    </div>
+                    <div class="company-desc">
+                        <div class="company-name">
+                            <h3>MAXWEAVE</h3>
+                        </div>
+                        <div class="company-address">
+                            <p>Shop No 224, Bhagirath-1, Nr.Maruti Chowk, L.H.Road, Surat</p>
+                        </div>
+                        <div class="company-telephone-email">
+                            <p class="company-mo">Mo. : 9712025025 </p>
+                            <p class="company-email">Email : hi.tesh25025@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="print-desc">
+                        <p>Printed On 23-10-2023 5:24</p>
+                        <p>1</p>
+                    </div>
+                </div>
+
+                <div class="title-setting-table">
+                    <table>
+                        <tr>
+                            <th>No</th>
+                            <th>Title</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Company Logo</td>
+                            <td> <label class="switch">
+                                    <input type="checkbox" id="cbcompany-logo" checked>
+                                    <span class="slider round"></span>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Company Name</td>
+                            <td> <label class="switch">
+                                    <input type="checkbox" id="cbcompany-name" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Company Address</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" id="cbcompany-address" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Company Mobile No</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" id="cbcompany-mo" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Company Email</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" id="cbcompany-email" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Printing Details</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" id="cbprint-desc" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
