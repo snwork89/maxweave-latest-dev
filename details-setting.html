@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="maxweavefev.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/details-setting.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/switch.css" />
+    <title>Profile</title>
+</head>
+
+<body>
+    <script src="details-setting.js" defer></script>
+    <div class="details-setting">
+        <div class="sidebar close">
+            <div class="logo-details">
+                <i class='bx bxl-c-plus-plus'></i>
+                <span class="logo_name">Max Weave</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="/" class="text-black">
+                        <i class="fa-solid fa-home"></i>
+                        <span class="link_name">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='fa-solid fa-cog'></i>
+                            <span class="link_name">Account</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name">Account</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                        <li><a href="devices.html">Device</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='fa-solid fa-cog'></i>
+                            <span class="link_name">Setting</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name">Design Setting</a></li>
+                        <li><a href="general-setting.html">Genaral</a></li>
+                        <li><a href="layoutsetting.html">Layout</a></li>
+                        <li><a class="link_name">Data Sheets</a></li>
+                        <li><a href="title.html">Title</a></li>
+                        <li><a href="details-setting.html">Details</a></li>
+                        <li><a href="simulation-setting.html">Simulation</a></li>
+                        <li><a href="warp-weft-pattern.html">Warp/Weft Pattern</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='fa-solid fa-phone'></i>
+                            <span class="link_name">Supports</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Supports</a></li>
+                        <li><a href="#">create supports</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt-2'></i>
+                        <span class="link_name">Store</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Store</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <!-- <img src="image/profile.jpg" alt="profileImg"> -->
+                        </div>
+                        <div class="name-job">
+                            <div class="profile_name">User Name</div>
+                        </div>
+                        <i class='bx bx-log-out'></i>
+                    </div>
+                </li>
+        </div>
+        <div class="right">
+            <div class="navbar">
+                <header>
+                    <nav>
+                        <i class="fa fa-bars icon"></i>
+                        <span>Max Weave</span>
+                    </nav>
+                </header>
+            </div>
+
+
+            <div class="page-content">
+                <div class="page-heading">
+                    <h3>Details Setting</h3>
+                </div>
+                <div class="breadcrumb">
+                    <span>Setting / Details Setting</span>
+                </div>
+                <div class="contents">
+                    <div>
+                        <table>
+                            <tr>
+                                <th>No</th>
+                                <th>Title</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Designer Name</td>
+                                <td> <label class="switch">
+                                        <input type="checkbox" id="cbdesigner-name" checked>
+                                        <span class="slider round"></span>
+                                    </label></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Party Name</td>
+                                <td> <label class="switch">
+                                        <input type="checkbox" id="cbparty-name" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Order No</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cborder-no" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Date</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbdate" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Design Name</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbdesign-name" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Total Dent</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbtotal-dent" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Weave Name</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbweave-name" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Draft Pattern</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbdraft-pattern" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Avg EPI</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbavg-EPI" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Avg PPI</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbavg-PPI" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>GSM</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbgsm" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table>
+                            <tr>
+                                <th>No</th>
+                                <th>Title</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Reed</td>
+                                <td> <label class="switch">
+                                        <input type="checkbox" id="cbreed" checked>
+                                        <span class="slider round"></span>
+                                    </label></td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Reed Space</td>
+                                <td> <label class="switch">
+                                        <input type="checkbox" id="cbreed-space" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>14</td>
+                                <td>shaft</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbshaft" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Total Ends</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbtotal-ends" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>Total Picks</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbtotal-picks" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>EPI</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbepi" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>PPI</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbppi" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>No Of Warp</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbno-of-warp" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>No Of Weft</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbno-of-weft" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>GLM</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbglm" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Blend(composition)</td>
+                                <td>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cbblend" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="preview">
+                        <div>
+                            <table class="print-details-table-container">
+                                <tr class="designer-name">
+                                    <td class="data-cell">Designer Name</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="party-name">
+                                    <td class="data-cell">Party Name</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="order-no">
+                                    <td class="data-cell">Order No</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="date">
+                                    <td class="data-cell">Date</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="design-name">
+                                    <td class="data-cell">Design Name</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="total-dent">
+                                    <td class="data-cell">Total Dent</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="weave-name">
+                                    <td class="data-cell">Weave Name</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="draft-pattern">
+                                    <td class="data-cell">Draft Pattern</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="avg-EPI">
+                                    <td class="data-cell">Avg EPI</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="avg-PPI">
+                                    <td class="data-cell">Avg PPI</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                                <tr class="gsm">
+                                    <td class="data-cell">GSM</td>
+                                    <td>:</td>
+                                    <td class="data-cell"></td>
+                                </tr>
+                        </table>
+                        </div>
+
+                        <div>
+                            <table class="print-details-table-container">
+                                    <tr class="reed">
+                                        <td class="data-cell">Reed</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="reed-space">
+                                        <td class="data-cell">Reed Space</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="shaft">
+                                        <td class="data-cell">Shaft</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="total-ends">
+                                        <td class="data-cell">Total Ends</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="total-picks">
+                                        <td class="data-cell">Total Picks</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="epi">
+                                        <td class="data-cell">EPI</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="ppi">
+                                        <td class="data-cell">PPI</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="no-of-warp">
+                                        <td class="data-cell">No Of Warp</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="no-of-weft">
+                                        <td class="data-cell">No Of Weft</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="glm">
+                                        <td class="data-cell">GLM</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                                    <tr class="blend">
+                                        <td class="data-cell"> Blend(composition)</td>
+                                        <td>:</td>
+                                        <td class="data-cell"></td>
+                                    </tr>
+                            </table>
+                        </div>
+                        <div class="simulation">
+                            <p>Simulation</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button">Reset</button>
+                    <button type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+

@@ -1,0 +1,65 @@
+.details-setting {
+  background: rgb(240, 240, 240);
+}
+
+.account-subscription-contents .account-devices-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-setting-tables {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  /* justify-content: space-between; */
+}
+
+.details-setting-contents {
+  height: 500px;
+  overflow-y: scroll;
+  margin-top: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* justify-content: space-between; */
+}
+
+.page-content {
+  padding: 15px;
+}
+
+.preview {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.simulation {
+  /* height: 250px; */
+  width: 350px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+/* tr:nth-child(even) {
+  background-color: white !important;
+} */
+
+
+div.preview > div:nth-child(1) > table > tbody > tr > td:nth-child(1) {
+  width: 200px !important;
+}
+
+div.preview > div:nth-child(1) > table > tbody > tr > td:nth-child(3) {
+  width: 100px !important;
+}
+div.preview > div:nth-child(2) > table > tbody > tr > td:nth-child(1) {
+  width: 200px !important;
+}
+
+div.preview > div:nth-child(2) > table > tbody > tr > td:nth-child(3) {
+  width: 100px !important;
+}

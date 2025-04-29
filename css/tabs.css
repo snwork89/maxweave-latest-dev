@@ -1,0 +1,127 @@
+.tab_container {
+  margin: 0 auto;
+  position: relative;
+}
+
+input[id^="tab-"],
+section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+label[for^="tab-"] {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  float: left;
+  /* width: 25%; */
+  width: 33.33%;
+  padding: 1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+#tab-company:checked~#company-section,
+#tab-profile:checked~#profile-section,
+#tab-subscription:checked~#subscription-section {
+  display: block;
+  padding: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.tab_container .tab-content h3 {
+  text-align: center;
+}
+
+.tab_container [id^="tab"]:checked+label {
+  background: #fff;
+  box-shadow: inset 0 3px #0ce;
+}
+
+.tab_container [id^="tab"]:checked+label .fa {
+  color: #0ce;
+}
+
+.setting-tab-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input[id^="setting-"],
+section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+label[for^="setting-"] {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  padding: 1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+
+/* #setting-design-general:checked ~ #design-general-section,
+  #setting-data-sheet-layout:checked ~ #data-sheet-layout-section,
+  #setting-data-sheet-title:checked ~ #data-sheet-title-section,
+  #setting-data-sheet-details:checked ~ #data-sheet-details-section,
+  #setting-default-warp-weft-pattern:checked ~ #default-warp-weft-pattern-section,
+  #setting-default-parameters:checked ~ #default-parameters-section {
+    display: block;
+    padding: 20px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  .setting-tab-container .tab-content h3 {
+    text-align: center;
+  }
+  
+  .setting-tab-container [id^="setting-"]:checked + label {
+    background: #fff;
+    box-shadow: inset 0 3px #0ce;
+  }
+  
+  .setting-tab-container [id^="setting-"]:checked + label .fa {
+    color: #0ce;
+  }
+   */
+
+/* .setting-tabs .active,
+.copy-design-tabs .active {
+  background: #fff;
+  box-shadow: inset 0 3px #0ce;
+}
+
+.setting-tab-contents section,
+.copy-design-contents section {
+  display: none;
+}
+
+.setting-tab-contents .active,
+.copy-design-contents .active {
+  display: block;
+} */
+
+.setting-tabs .active {
+  background: #fff;
+  box-shadow: inset 0 3px #0ce;
+}
+
+.setting-tab-contents section {
+  display: none;
+}
+
+.setting-tab-contents .active {
+  display: block;
+}

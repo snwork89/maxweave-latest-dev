@@ -1,0 +1,83 @@
+/* Notification Container */
+#notification-container {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: scroll;
+    z-index: 1000;
+    max-height: 500px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .notification-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .loader {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .notification {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .notification-content span {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .notification-accept-btn {
+    background-color: #0b84ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .notification-accept-btn:hover {
+    background-color: #0a74e1;
+  }
+
+  
+#share-design-modal .modal-desc{
+  padding: 5px;
+}
+
+#share-icon{
+  position: relative;
+}
+
+#share-design-modal .close-button{
+  cursor: pointer;
+}
+#share-design-modal .btn-group{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#share-design-cancel{
+  margin-right: 5px;
+}
+
+.notification-timestamp{
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 300;
+  color: gray;
+}
